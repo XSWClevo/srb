@@ -1,0 +1,10 @@
+2021-04-11 22:01:01 [INFO ] main StartupInfoLogger.java:55 com.xshiwu.srb.core.ServiceCoreApplication Starting ServiceCoreApplication on DESKTOP-9S11C8G with PID 12156 (E:\IdeaProject\srb\service-core\target\classes started by Sunday in E:\IdeaProject\srb)
+2021-04-11 22:01:01 [INFO ] main SpringApplication.java:655 com.xshiwu.srb.core.ServiceCoreApplication The following profiles are active: dev
+2021-04-11 22:01:04 [INFO ] main StartupInfoLogger.java:61 com.xshiwu.srb.core.ServiceCoreApplication Started ServiceCoreApplication in 3.663 seconds (JVM running for 4.374)
+2021-04-11 22:11:30 [INFO ] main StartupInfoLogger.java:55 com.xshiwu.srb.core.ServiceCoreApplication Starting ServiceCoreApplication on DESKTOP-9S11C8G with PID 11584 (E:\IdeaProject\srb\service-core\target\classes started by Sunday in E:\IdeaProject\srb)
+2021-04-11 22:11:30 [INFO ] main SpringApplication.java:655 com.xshiwu.srb.core.ServiceCoreApplication The following profiles are active: dev
+2021-04-11 22:11:33 [INFO ] main StartupInfoLogger.java:61 com.xshiwu.srb.core.ServiceCoreApplication Started ServiceCoreApplication in 3.711 seconds (JVM running for 4.394)
+2021-04-11 22:12:00 [INFO ] http-nio-8110-exec-10 AdminIntegralGradeController.java:42 com.xshiwu.srb.core.controller.admin.AdminIntegralGradeController 哈哈哈哈哈
+2021-04-11 22:12:00 [ERROR] http-nio-8110-exec-10 AdminIntegralGradeController.java:44 com.xshiwu.srb.core.controller.admin.AdminIntegralGradeController 哈哈哈哈哈
+2021-04-11 22:16:01 [INFO ] http-nio-8110-exec-4 AdminIntegralGradeController.java:42 com.xshiwu.srb.core.controller.admin.AdminIntegralGradeController 哈哈哈哈哈
+2021-04-11 22:16:01 [ERROR] http-nio-8110-exec-4 AdminIntegralGradeController.java:44 com.xshiwu.srb.core.controller.admin.AdminIntegralGradeController 哈哈哈哈哈
