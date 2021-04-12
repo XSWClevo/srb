@@ -40,7 +40,6 @@ public class AdminIntegralGradeController {
     @GetMapping("/list")
     public R listAll() {
         log.info("哈哈哈哈哈");
-        log.debug("哈哈哈哈哈");
         log.warn("哈哈哈哈哈哈");
         log.error("哈哈哈哈哈");
         Map<String, Object> map = new HashMap<>();
@@ -120,6 +119,7 @@ public class AdminIntegralGradeController {
         if (updateById){
             return R.ok().message("数据更新成功！");
         } else {
+            log.error("数据更新失败");
             return R.error().message("数据更新失败！");
         }
     }
