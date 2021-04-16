@@ -1,7 +1,10 @@
 package com.xshiwu.srb.core.mapper;
 
-import com.xshiwu.srb.core.pojo.entity.Dict;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.xshiwu.srb.core.pojo.dto.ExcelDictDTO;
+import com.xshiwu.srb.core.pojo.entity.Dict;
+
+import java.util.List;
 
 /**
  * <p>
@@ -12,5 +15,5 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @since 2021-04-10
  */
 public interface DictMapper extends BaseMapper<Dict> {
-
+    void insertBatch(List<ExcelDictDTO> list);
 }

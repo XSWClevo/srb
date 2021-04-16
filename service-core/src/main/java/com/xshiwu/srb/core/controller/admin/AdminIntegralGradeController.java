@@ -91,7 +91,7 @@ public class AdminIntegralGradeController {
      * @return json数据
      */
     @ApiOperation("根据id获取积分等级")
-    @PostMapping("/get/{id}")
+    @GetMapping("/get/{id}")
     public R getById(
             @ApiParam(value = "数据id", example = "1", required = true)
             @PathVariable Long id){
@@ -123,5 +123,4 @@ public class AdminIntegralGradeController {
             return R.error().message("数据更新失败！");
         }
     }
-
 }

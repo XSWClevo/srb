@@ -1,3 +1,5 @@
+package com.xshiwu.srb.core;
+
 import com.baomidou.mybatisplus.annotation.DbType;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.generator.AutoGenerator;
@@ -6,12 +8,18 @@ import com.baomidou.mybatisplus.generator.config.GlobalConfig;
 import com.baomidou.mybatisplus.generator.config.PackageConfig;
 import com.baomidou.mybatisplus.generator.config.StrategyConfig;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
+import com.xshiwu.srb.core.mapper.DictMapper;
+import com.xshiwu.srb.core.pojo.entity.Dict;
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.redis.core.RedisTemplate;
+
+import javax.annotation.Resource;
+import java.util.concurrent.TimeUnit;
 
 @SpringBootTest
 public class SrbTest {
-    @Test
+//    @Test
     public void genCode() {
 
         // 1、创建代码生成器
@@ -56,5 +64,23 @@ public class SrbTest {
 
         // 6、执行
         mpg.execute();
+    }
+
+
+    @Resource
+    private RedisTemplate redisTemplate;
+    @Resource
+    private DictMapper dictMapper;
+    @Test
+    public void saveDict(){
+        Dict dict = dictMapper.selectById(1);
+        //向数据库中存储string类型的键值对, 过期时间5分钟
+        redisTemplate.opsForValue().set("dict", dict, 5, TimeUnit.MINUTES);
+    }
+
+    @Test
+    public void getDict(){
+        Dict dict = (Dict)redisTemplate.opsForValue().get("dict");
+        System.out.println(dict);
     }
 }
