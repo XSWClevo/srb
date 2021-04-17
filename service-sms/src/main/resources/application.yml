@@ -24,8 +24,8 @@ spring:
 #阿里云短信
 aliyun:
   sms:
-    region-id: cn-hangzhou
-    key-id: LTAI5tPN46dWF49Ct5FJb87H   # 你的AccessKey ID
-    key-secret: P5ZeVFOvbil4Toem0Nen6cOUDudNdP  # 你的AccessKey Secret
-    template-code: SMS_193523406 #你的短信模板
-    sign-name: 短信demo  # 短信模板签名
+    region-id:
+    key-id:    # 你的AccessKey ID
+    key-secret:   # 你的AccessKey Secret
+    template-code: #你的短信模板
+    sign-name:  # 短信模板签名
